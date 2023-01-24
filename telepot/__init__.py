@@ -1162,6 +1162,7 @@ class Bot(_BotBase):
 
         def relay_to_collector(update):
             key = _find_first_key(update, ['message',
+                                           'update_id',
                                            'edited_message',
                                            'channel_post',
                                            'edited_channel_post',
